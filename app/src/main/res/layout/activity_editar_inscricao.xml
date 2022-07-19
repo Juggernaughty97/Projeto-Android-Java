@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarInscricaoActivity">
+
+    <EditText
+        android:id="@+id/editTextNumeroInsc"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Numero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <EditText
+        android:id="@+id/editTextNomeInsc"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumeroInsc"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <EditText
+        android:id="@+id/editTextTelefoneInsc"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Telefone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeInsc"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/editTextIdadeInsc"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Idade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTelefoneInsc"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <EditText
+        android:id="@+id/editTextEmailInsc"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIdadeInsc"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:onClick="btnPressionado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailInsc"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="btnPressionado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailInsc"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/buttonVoltarSeg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:onClick="btnPressionado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdate"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/buttonVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:onClick="btnPressionado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDelete"
+        app:layout_constraintVertical_bias="0.108" />
+</androidx.constraintlayout.widget.ConstraintLayout>
